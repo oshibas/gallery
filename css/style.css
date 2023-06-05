@@ -10,21 +10,24 @@ body {
   font-weight: 300;
 }
 
+/* リンクの色と下線をなくす */
 a {
   color: #fff;
   text-decoration: none;
 }
 
+/* 画像の最大幅を100%に設定 */
 img {
   max-width: 100%;
   vertical-align: bottom;
 }
 
+/* リストのマーカーをなくす */
 li {
   list-style: none;
 }
 
-/* h1タグ用 */
+/* h1タグ用のスタイル */
 .site-title {
   font-size: 6.25rem;
   font-weight: 300;
@@ -32,7 +35,7 @@ li {
   margin: 100px 0;
 }
 
-/* h2タグ用 */
+/* h2タグ用のスタイル */
 .section-title {
   border-bottom: solid 1px #fff;
   /* 下線をテキストと同じ幅にあわせるために設定 */
@@ -62,7 +65,6 @@ li {
 初期状態は「translateY(60px);」で画面の右側に隠しておく
 Galleryのタイトルが画面下にきたタイミングで、jQueryでCSSを変更してボタンをスライドしながら表示する
 Accessのタイトルが画面下にきたタイミングで、jQueryでCSSを変更してボタンをスライドしながら非表示にする
-※main.jsの「サイドボタンを表示」を参照
 */
 #side-btn {
   border: solid 1px #fff;
@@ -74,6 +76,7 @@ Accessのタイトルが画面下にきたタイミングで、jQueryでCSSを�
   z-index: 30;
 }
 
+/* サイドボタン内のリンク */
 #side-btn a {
   width: 165px;
   font-size: 0.875rem;
@@ -83,10 +86,12 @@ Accessのタイトルが画面下にきたタイミングで、jQueryでCSSを�
   transition: 0.3s;
 }
 
+/* サイドボタン内の最後のリンクに左側のボーダーを追加 */
 #side-btn a:last-of-type {
   border-left: solid 1px #fff;
 }
 
+/* サイドボタン内のリンクのホバー時の透明度を変更 */
 #side-btn a:hover {
   opacity: 0.7;
 }
@@ -97,7 +102,6 @@ Accessの背景画像
 Accessのタイトルが画面下にきたタイミングで、jQueryのfadeInで表示する
 Contactのタイトルが画面下にきたタイミングで、jQueryのfadeOutで非表示にする
 「position: fixed;」で固定し「width: 100vw;」「height: 100vh;」で全画面表示する
-※main.jsの「Accessの背景画像を表示」を参照
 */
 .bg {
   background: url("../img/bg.jpg") center center repeat !important;
@@ -123,9 +127,7 @@ InformationとGalleryの画像を下からふわっと表示させるための�
 }
 
 /*
-fadeinクラスの要素が画面下にきたタイミングで、jQueryのinviewにてshowクラスを追加して
-「transform: translate(0, 0);」と「opacity: 1;」で表示させる
-※main.jsの「フェード表示」を参照
+fadeinクラスの要素が画面下にきたタイミングで、jQueryのinviewにてshowクラスを追加して「transform: translate(0, 0);」と「opacity: 1;」で表示させる
 */
 .fadein.show {
   transform: translate(0, 0);
@@ -139,7 +141,6 @@ fadeinクラスの要素が画面下にきたタイミングで、jQueryのinvie
 ヘッダーロゴ
 初期状態は「display: none;」で非表示にしておく
 所定のスクロール位置にきたらjQueryのfadeInで表示する
-※main.jsの「ロゴ、ハンバーガーメニューの表示」を参照
 */
 .logo {
   line-height: 1px;
@@ -159,7 +160,6 @@ fadeinクラスの要素が画面下にきたタイミングで、jQueryのinvie
 ハンバーガ―メニュー
 初期状態は「display: none;」で非表示にしておく
 所定のスクロール位置にきたらjQueryのfadeInで表示する
-※main.jsの「ロゴ、ハンバーガーメニューの表示」を参照
 */
 .hamburger {
   width: 42px;
@@ -244,7 +244,7 @@ fadeinクラスの要素が画面下にきたタイミングで、jQueryのinvie
 }
 
 /*-------------------------------------------
-Mainvisual
+メインビジュアル
 -------------------------------------------*/
 #mainvisual {
   display: flex;

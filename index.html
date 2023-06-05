@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <title>FA EXHIBITION</title>
     <meta name="description" content="お花の展示サイト（模写）">
+
+    <!-- レスポンシブデザイン用の設定 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.ico">
+
+    <!-- リセットCSSとフォントの読み込み -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- スタイルシートとスクリプトの読み込み -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.inview.min.js"></script>
@@ -17,11 +23,13 @@
   </head>
 
   <body>
+    <!-- ヘッダー -->
     <header id="header">
       <div class="logo">
         <a href="#"><img src="img/logo.svg" alt="FA EXHIBITION"></a>
       </div>
 
+      <!-- ナビゲーションメニュー -->
       <nav id="navi">
         <ul class="menu">
           <li><a href="#">TOP</a></li>
@@ -32,6 +40,7 @@
         </ul>
       </nav>
 
+      <!-- ハンバーガーメニュー -->
       <div class="hamburger">
         <span></span>
         <span></span>
@@ -39,8 +48,10 @@
       </div>
     </header>
 
+    <!-- コンテンツコンテナ -->
     <div class="container">
       <main>
+
         <!-- メインビジュアル -->
         <div id="mainvisual">
           <img src="img/mainvisual1.jpg" alt="">
@@ -75,6 +86,7 @@
         <section id="gallery" class="wrapper">
           <h2 class="section-title inview fadein">GALLERY</h2>
           <ul class="list">
+            <!-- 画像リスト -->
             <li class="inview fadein"><img src="img/flower1.jpg" alt=""></li>
             <li class="inview fadein"><img src="img/flower2.jpg" alt=""></li>
             <li class="inview fadein"><img src="img/flower3.jpg" alt=""></li>
@@ -110,6 +122,7 @@
         <div class="bg"></div>
       </main>
 
+      <!-- フッター -->
       <footer id="footer">
         <div>
           <p>FA EXHIBITION</p>
